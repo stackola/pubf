@@ -1,0 +1,28 @@
+{
+  "name": "pubf",
+  "version": "1.0.0",
+  "description": "sup",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run bundle && node js/index.js",
+    "watch": "watchify public/js/index.js -o public/js/bundle.js",
+    "bundle": "browserify public/js/index.js > public/js/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackola/pubf.git"
+  },
+  "author": "",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/stackola/pubf/issues"
+  },
+  "homepage": "https://github.com/stackola/pubf#readme",
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "express": "^4.15.3",
+    "socket.io": "^2.0.3",
+    "watchify": "^3.9.0"
+  }
+}
